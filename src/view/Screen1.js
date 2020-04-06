@@ -1,8 +1,13 @@
-class Screen1 extends ScreenView{
+class Screen1 {
     
-    pintar() {
-        rect(500,500,30,30);
-    }
+constructor(){
+
+    
+}
+
+    pintarScreen2() {
+
+   }
 
     
 }

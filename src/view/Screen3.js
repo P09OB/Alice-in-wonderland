@@ -1,4 +1,4 @@
-class Screen3 extends ScreenView{
+class Screen3 {
     
     pintar() {
         
