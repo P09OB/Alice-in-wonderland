@@ -5,7 +5,7 @@ class Personaje extends Elementos {
         this.posX=posX;
         this.posY=posY;
         this.tam=tam;
-        this.vel = 76;
+        this.vel = 10;
 
     }
 

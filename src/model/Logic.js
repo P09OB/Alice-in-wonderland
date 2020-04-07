@@ -13,10 +13,6 @@ class Logic {
     
     
         pintar(){
-
-         
-            fill(255);
-            text(this.cuento,10,10);
     
             for (let i = 0; i < this.cuento.length; i++) {
                 this.cuentoSplited = this.cuento[i].split(" ");
@@ -24,8 +20,15 @@ class Logic {
                 if (this.cuentoSplited[0].includes("Alicia")){
 
                     this.alicia.pintar();
-
         }
+
+        if (this.cuentoSplited[0].includes("puerta")){
+
+            this.pastel.Pastel();
+}
+
+
+        
     }
 }
 
