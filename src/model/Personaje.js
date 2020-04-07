@@ -5,9 +5,25 @@ class Personaje extends Elementos {
         this.posX=posX;
         this.posY=posY;
         this.tam=tam;
+        this.vel = 76;
+
     }
+
+    caminar() {
+
+        if (keyCode == RIGHT_ARROW) {
+        
+            this.posX += this.vel
+    }
+    
+    if (keyCode == LEFT_ARROW) {
+        this.posX -= this.vel; 
+    }
+}
 
     pintar() {
         image(this.alicia,this.posX,this.posY);
     }
+
+
 }

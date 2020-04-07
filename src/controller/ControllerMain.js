@@ -11,4 +11,10 @@ class ControllerMain {
         this.logica.pintar();
     }
 
+
+    teclas() {
+
+        this.logica.caminar();
+    }
+
 }

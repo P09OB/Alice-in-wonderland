@@ -1,10 +1,8 @@
-let cambio = 0;
 let screenView;
-let pan1;
-function setup(){
-createCanvas(1080,700);
-screenView = new ScreenView();
 
+function setup(){
+createCanvas (1414,960);
+screenView = new ScreenView();
 
 }
 
@@ -14,30 +12,16 @@ function draw() {
     screenView.pintar();
 
 
-    switch(cambio){
-        case 0:
-            
-
-        break;
-
-        case 1:
-
-
-        break;
-
-        case 2:
-
-    
-        break;
-
-    }
-
 }
 
-function mousePressed() {
+function mousePressed(){
+    screenView.cambioPantalla();
 
 }
 
 function keyPressed(){
+
+    screenView.teclas();
+
 
 }

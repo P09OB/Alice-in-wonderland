@@ -1,13 +1,60 @@
 class ScreenView {
     constructor(){
-     this.controllerMain = new ControllerMain();
+
+      let pIncio, pJuego, pFinal;
+      this.pInicio= new Screen1();
+      this.pJuego= new Screen2();
+      this.pFinal= new Screen3();
+    
+     this.cambio = 0;
      
     }
 
     pintar() {
-      this.controllerMain.pintar();
-       
 
+      switch(this.cambio) {
+
+      case 0: 
+
+      this.pInicio.pintarScreen();
+
+
+      break;
+
+      case 1 : 
+
+      this.pJuego.pintarScreen2();
+      this.pJuego.mover();
+
+      break;
+
+      case 3: 
+
+      this.pFinal.pintarScreen3();
+
+
+      break;
+
+
+
+
+      }
+      fill (255,0,0);
+      text("X:" + mouseX + "Y:" + mouseY, mouseX, mouseY);
+
+    }
+
+    cambioPantalla(){
+      switch(this.cambio){
+        case (0): if((mouseX>608 && mouseX<793)&& (mouseY>686 && mouseY<747)){
+            this.cambio=1;
+        } 
+
+        //aqui se pasa a la ultima pantalla pero todavia no tenemos la condicion de cuando pase 
+        /*case (1): 
+            this.pantalla=2;*/
+        
+    }
     }
     
 }

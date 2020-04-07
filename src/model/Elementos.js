@@ -9,7 +9,9 @@ class Elementos {
 
     }
 
-    
+    pintar(){
+        
+    }
 
 }
 
