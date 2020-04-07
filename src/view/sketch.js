@@ -11,7 +11,7 @@ screenView = new ScreenView();
 function draw() {
     background(0);
     
-screenView.pintar();
+    screenView.pintar();
 
 
     switch(cambio){

@@ -2,20 +2,18 @@ class Logic {
 
 
     constructor(){
-        let elementos;
-        let cuento;
-        elementos = new Personaje();
-
-        cuento =loadStrings("./lib/cuento.txt");
+        this.alicia = new Personaje(300,0,10);
+        this.cuento = loadStrings("./lib/cuento.txt");
 
     }
 
 
     pintar(){
 
-        elementos.pintarPersonaje();
-        Text(cuento,10,10);
-
+        this.alicia.pintar();
+     
+        fill(255);
+        text(this.cuento,10,10);
 
 
     }

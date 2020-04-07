@@ -1,13 +1,14 @@
 class ControllerMain {
     constructor(){
 
-        let logica;
-        logica = new Logic();
+       
+        this.logica = new Logic();
         
     }
 
      pintar() {
-        logica.pintar();
+        
+        this.logica.pintar();
     }
 
 }
