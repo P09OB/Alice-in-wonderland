@@ -5,12 +5,11 @@ class Conejo extends Elementos {
         this.posX=posX;
         this.posY=posY;
         this.tam=tam;
-        this.vel = 76;
 
     }
 
 
     pintar() {
-        image(this.conejo,this.getPosx(),this.getPosy());
+        image(this.conejo,this.posX,this.posY);
     }
 }

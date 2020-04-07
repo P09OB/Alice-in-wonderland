@@ -7,12 +7,15 @@ class Logic {
         this.pastel= new Pastel(300,0,10);
         this.alicia = new Personaje(0,0,10);
         this.frasco = new Frasco(300,0,10);
-        this.conejo = new Conejo();
+        this.conejo = new Conejo(0,0,0);
            
         }
     
     
         pintar(){
+
+            this.conejo.pintar();
+
     
             for (let i = 0; i < this.cuento.length; i++) {
                 this.cuentoSplited = this.cuento[i].split(" ");
@@ -50,7 +53,6 @@ class Logic {
 
         if (this.cuentoSplited.includes("conejo")){
 
-            this.conejo.pintar();
     
 }
 }
@@ -61,6 +63,7 @@ class Logic {
    
             }
         }
+
 
     caminar() {
 
