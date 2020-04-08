@@ -5,6 +5,7 @@ class Frasco extends Elementos {
     constructor( posX, posY, tam){
         super(posX,posY,tam);
         this.vel = 5;
+        this.cambioTamano = false;
     }
 
     pintar() {
@@ -38,8 +39,12 @@ class Frasco extends Elementos {
 
    cambiartam() {
 
-    
 
-    
+    if((mouseX > this.posX && mouseX < this.posX+315) && (mouseY> this.posY && mouseY <this.posY+411)) {
+        this.cambioTamano = true;
+}
+
+
+
    }
 }
