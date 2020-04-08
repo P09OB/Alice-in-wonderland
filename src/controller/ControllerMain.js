@@ -17,4 +17,9 @@ class ControllerMain {
         this.logica.caminar();
     }
 
+    moverBackground(posx) {
+this.logica.moverBackground(posx);
+
+    }
+
 }

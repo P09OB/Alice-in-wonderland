@@ -8,5 +8,10 @@ class Pastel extends Elementos {
     }
     pintar() {
         image(this.pastel,this.posX,this.posY,0,0);
+        
    }
+
+   
+
+   
 }

@@ -6,7 +6,7 @@ class Frasco extends Elementos {
 
     pintar() {
 
-        image(this.frasco,this.posX,this.posY,434,642);
+        image(this.frasco,this.posX,this.posY,263,391);
        
    }
 }
