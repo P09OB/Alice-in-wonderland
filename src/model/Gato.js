@@ -1,7 +1,7 @@
 class Gato extends Elementos {
 
     gato= loadImage("./imag/gatoBrilla.png"); 
-    colaGato= loadImage("./imag/colaGatoBrilla.png");
+    colaGato= loadImage("./imag/colaGatoBrilla (1).png");
     llave=loadImage("./imag/llaveBrillo.png");
 
     constructor( posX, posY, tam){

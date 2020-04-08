@@ -35,7 +35,10 @@ class Paradax{
         }
 
         if(this.posx == -1380 ){
-this.mostrarPuerta = true;
+        this.mostrarPuerta = true;
+        }
+        if(this.posx == -1330 ){
+        this.mostrarPuerta = false;
         }
 
         console.log(this.posx);
