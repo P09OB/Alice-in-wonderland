@@ -25,6 +25,7 @@ class ScreenView {
 
       this.pJuego.pintarScreen2();
 
+
       break;
 
       case 3: 
@@ -46,7 +47,6 @@ class ScreenView {
 
     cambioPantalla(){
 
-      this.pJuego.mouse();
 
 
       switch(this.cambio){
@@ -58,6 +58,7 @@ class ScreenView {
         } 
 break;
         case 1:
+          this.pJuego.mouse();
 
 
       
