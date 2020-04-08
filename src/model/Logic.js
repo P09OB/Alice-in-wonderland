@@ -92,19 +92,4 @@ class Logic {
         this.alicia.caminar();
     }
 
-    moverBackground(posx) {
-        this.alicia.moverBackground(posx);
-    }
-
-
-
-
-
-    moverBackground(){
-
-        if(this.alicia.getPosx() == 700){
-            this.pox += 20;
-        }
-    }
-
 }
