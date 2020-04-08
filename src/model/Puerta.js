@@ -18,6 +18,9 @@ class Puerta extends Elementos {
         if(this.mostrar==true){
             image(this.otroMundo,0,0);
         }
+        if(this.mostrarFrasco === true){
+            this.motrar== false;
+        }
 
 
    }

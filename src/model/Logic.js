@@ -14,7 +14,12 @@ class Logic {
     pintar() {
 
         this.fondo.pintar();
-        this.fondo.mover();
+
+        if(this.conejo.brilloActivarConejo == false){
+            console.log("entre");
+            this.fondo.mover();
+
+        }
 
 
         for (let i = 0; i < this.cuento.length; i++) {
