@@ -19,7 +19,7 @@ class Paradax{
 
         if(mouseX <= 94){
 
-            if(this.posx >= -800){
+            if(this.posx >= -900){
             }else{
                 this.posx += this.vel;
             }

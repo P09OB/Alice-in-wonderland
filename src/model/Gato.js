@@ -11,14 +11,18 @@ class Gato extends Elementos {
 
     }
     pintar() {
-
+    //Gato  
         if(this.mostrar==true){
         image(this.gato,this.posX,this.posY,354,562);
 
    }
-   if(this.mostrar==false){
+
+    //Cola
+    if(this.mostrar==false){
     image(this.colaGato,this.posX+70,this.posY-300);
     }
+
+    // Llave 
     if(this.mostrarL==true){
         image(this.llave,this.posX+70,this.posY-300);
         }

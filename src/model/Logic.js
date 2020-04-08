@@ -45,7 +45,11 @@ class Logic {
 
                             if (this.cuentoSplited.includes("frasco")) {
 
+                                if(this.puerta.mostrarFrasco == true) {
+
                                 this.frasco.pintar();
+                                this.frasco.mover();
+                                }
 
                             }
                         }
