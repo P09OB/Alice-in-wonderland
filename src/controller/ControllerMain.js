@@ -14,7 +14,13 @@ class ControllerMain {
 
     teclas() {
 
-        this.logica.caminar();
+        this.logica.key();
+    }
+
+    mouse() {
+
+        this.logica.mouse();
+
     }
 
     moverBackground(posx) {

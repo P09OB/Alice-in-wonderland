@@ -46,6 +46,8 @@ class ScreenView {
 
     cambioPantalla(){
 
+      this.pJuego.mouse();
+
 
       switch(this.cambio){
 

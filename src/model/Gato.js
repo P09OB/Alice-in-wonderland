@@ -9,7 +9,8 @@ class Gato extends Elementos {
     }
     pintar() {
 
-        image(this.gato,this.posX,this.posY,434,642);
+        
+        image(this.gato,this.posX,this.posY,354,562);
        
    }
 

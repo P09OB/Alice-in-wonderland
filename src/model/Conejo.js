@@ -12,4 +12,12 @@ class Conejo extends Elementos {
     pintar() {
         image(this.conejo,this.posX,this.posY);
     }
+
+    correr() {
+         if((mouseX > this.posX && mouseX < this.posX) && (mouseY> this.posx && mouseY == this.posY)) {
+
+    this.posX += 600;
+}
+
+    }
 }

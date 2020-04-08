@@ -5,11 +5,11 @@ class Logic {
             this.cuento = loadStrings("./lib/cuento.txt");
             this.pJuego= loadImage("./imag/pJuego.png"); 
 
-        this.gato= new Gato(300,0,10);
-        this.pastel= new Pastel(300,0,10);
-        this.alicia = new Personaje(0,0,293.5,410.5);
-        this.frasco = new Frasco(300,0,10);
-        this.conejo = new Conejo(0,0,0);
+            this.gato= new Gato(720,290,10);
+            this.pastel= new Pastel(150,680,10);
+            this.alicia = new Personaje(340,180,447,681);
+            this.frasco = new Frasco(40,200,10);
+            this.conejo = new Conejo(930,485,0);
         this.pox = 0;
            
         }
@@ -23,14 +23,14 @@ class Logic {
 
             if(this.alicia.posX == 500){
 
-                this.pox -=400;
+                this.pox -=800;
                 console.log(this.pox);}
 
             }
 
-            if(this.pox == -400 && this.alicia.pox == 30){
+            if(this.pox < 0 && this.alicia.pox == 30){
 
-                this.pox +=400;
+                this.pox +=100;
 
             }
 
@@ -75,7 +75,7 @@ class Logic {
 
         if (this.cuentoSplited.includes("conejo")){
 
-    
+    this.conejo.pintar();
 }
 }
 
@@ -87,9 +87,14 @@ class Logic {
         }
 
 
-    caminar() {
+    key() {
 
         this.alicia.caminar();
     }
+
+    mouse(){
+        this.conejo.correr();
+
+    } 
 
 }

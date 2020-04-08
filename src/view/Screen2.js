@@ -22,5 +22,10 @@ class Screen2 {
 
    }
 
+   mouse() {
+
+    this.controllerMain.mouse();
+   }
+
     
 }
