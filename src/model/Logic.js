@@ -42,16 +42,22 @@ class Logic {
 
                     if (this.cuentoSplited.includes("galletas")) {
 
+                        if(this.gato.mostrarL == true){
+
                         this.pastel.pintar();
+                        }
                     }
                 }
 
                     for (let i = 0; i < this.cuento.length; i++) {
 
-                        if (this.cuentoSplited.includes("gato")) {
+                       
 
+                        if (this.cuentoSplited.includes("gato")) {
+                            if(this.frasco.cambioTamano == true){
                             this.gato.pintar();
                         }
+                    }
                     }
 
                         for (let i = 0; i < this.cuento.length; i++) {
@@ -87,9 +93,14 @@ class Logic {
                     }
 
                     if(this.frasco.cambioTamano == true){
-                        console.log("entreTam");
                         this.alicia.tam = 293.5;
                         this.alicia.tam2= 410.5;                 
+                    }
+
+                    if(this.pastel.cambiartam1  == true){
+                        console.log("cambiar");
+                        this.alicia.tam = this.tamAlicia;
+                        this.alicia.tam2= this.tam2Alicia;                 
                     }
 
 
@@ -147,6 +158,7 @@ class Logic {
         this.gato.aparecerGato();
         this.gato.mostrarLlave();
         this.frasco.cambiartam();
+        this.pastel.cambiartam();
 
         if (this.conejo.activar == true) {
             this.alicia.brilloActivarAlicia = false;

@@ -32,14 +32,15 @@ class Gato extends Elementos {
 }
 
 aparecerGato(){
-    if((mouseX > this.posXCola && mouseX < this.posXCola+344) && (mouseY> this.posYCola && mouseY <this.posYCola+500)) {
+    if((mouseX > this.posXCola && mouseX < this.posXCola+250) && (mouseY> this.posYCola && mouseY <this.posYCola+320)) {
         this.mostrar=true;
     }
 }
 
 mostrarLlave(){
-    if(this.mostrar==true&&(mouseX > this.posX && mouseX < this.posX+574) && (mouseY> this.posY && mouseY <this.posY+782)) {
+    if(this.mostrar==true&&(mouseX > this.posX && mouseX < this.posX+280) && (mouseY> this.posY && mouseY <this.posY+520)) {
         this.mostrarL=true;
+        
     }
 }
 
