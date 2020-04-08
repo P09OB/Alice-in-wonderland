@@ -88,7 +88,9 @@ class Logic {
 
                     if(this.frasco.cambioTamano == true){
                         console.log("entreTam");
-                        this.cambiarTamano();                        }
+                        this.alicia.tam = 293.5;
+                        this.alicia.tam2= 410.5;                 
+                    }
 
 
                         break;
@@ -160,7 +162,7 @@ class Logic {
         case 1:
 
             if((mouseX > 1256 && mouseX <1361) && (mouseY>36 && mouseY <168)) {
-this.orden = 0;
+                this.orden = 0;
                 this.puerta.mostrarFrasco = true;
                 this.puerta.puertaBrilla=false;
                     }
@@ -177,8 +179,7 @@ this.orden = 0;
 
     cambiarTamano() {
 
-this.tamAlicia = -50;
-this.tam2Alicia= -50;
+
 
     }
 
