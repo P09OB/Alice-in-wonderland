@@ -7,6 +7,7 @@ class Conejo extends Elementos {
         this.posY=posY;
         this.tam=tam;
         this.vel = 1;
+        this.activar = false;
 
 
     }
@@ -25,6 +26,7 @@ class Conejo extends Elementos {
 
         if(this.corre == true){
         this.posX += this.vel;
+        
         }
     }
 
@@ -32,6 +34,7 @@ class Conejo extends Elementos {
         if((mouseX > this.posX && mouseX < this.posX+315) && (mouseY> this.posY && mouseY <this.posY+411)) {
             this.brilloActivarConejo=false;
             this.corre= true;
+            this.activar = true;
 }
 
 

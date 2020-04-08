@@ -2,6 +2,8 @@ class Personaje extends Elementos {
     constructor( posX, posY, tam,tam2){
         super(posX,posY,tam);
         this.alicia = loadImage("./imag/alicia.png"); 
+        this.aliciaBrilla = loadImage("./imag/aliciaBrilla.png");
+
         this.posX=posX;
         this.posY=posY;
         this.tam=tam;
@@ -13,23 +15,37 @@ class Personaje extends Elementos {
     caminar() {
 
         if (keyCode == RIGHT_ARROW) {
-        
-            this.posX += this.vel
+            this.brilloActivarAlicia=true;
+
+            if(this.posx< 94){
+
+            } else {
+            this.posX += this.vel; 
+            }
     }
     
     if (keyCode == LEFT_ARROW) {
+        this.brilloActivarAlicia=true;
+
+        if(this.posx< 1284){
+
+        } else {
         this.posX -= this.vel; 
+        }
     }
 }
 
     pintar() {
-        image(this.alicia,this.posX,this.posY,this.tam,this.tam2);
+        if(this.brilloActivarAlicia==false){
+            image(this.aliciaBrilla,this.posX,this.posY,this.tam,this.tam2);
+        }else {
+    
+           image(this.alicia,this.posX,this.posY,this.tam,this.tam2); 
+        }
     }
 
 
-    getPosx() {
-        return this.posX
-    }
+    
 
 }
 

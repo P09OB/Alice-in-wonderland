@@ -10,7 +10,6 @@ class Screen2 {
     
 
     pintarScreen2() {
-        image(this.pJuego,-1392,0);
         image(this.colaGato,800,-60);
         this.controllerMain.pintar();
 

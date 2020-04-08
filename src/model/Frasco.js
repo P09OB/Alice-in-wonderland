@@ -9,4 +9,9 @@ class Frasco extends Elementos {
         image(this.frasco,this.posX,this.posY,263,391);
        
    }
+
+   cambiartam() {
+
+    
+   }
 }
