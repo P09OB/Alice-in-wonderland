@@ -15,9 +15,8 @@ class Personaje extends Elementos {
     caminar() {
 
         if (keyCode == RIGHT_ARROW) {
-            this.brilloActivarAlicia=true;
 
-            if(this.posx< 94){
+            if(this.posx>0){
 
             } else {
             this.posX += this.vel; 
@@ -25,7 +24,6 @@ class Personaje extends Elementos {
     }
     
     if (keyCode == LEFT_ARROW) {
-        this.brilloActivarAlicia=true;
 
         if(this.posx< 1284){
 

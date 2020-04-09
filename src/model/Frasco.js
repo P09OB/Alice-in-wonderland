@@ -6,13 +6,17 @@ class Frasco extends Elementos {
         super(posX,posY,tam);
         this.vel = 5;
         this.cambioTamano = false;
+        this.frascoBrilla=true;
     }
 
     pintar() {
-
-        image(this.frasco,this.posX,this.posY,263,391);
-        image(this.frascoBrillo,this.posX,this.posY,263,391);
-       
+        if(this.frascoBrilla==true){
+            image(this.frascoBrillo,this.posX,this.posY,263,391);
+            }
+        if(this.frascoBrilla==false){
+            image(this.frasco,this.posX,this.posY,263,391);
+            }
+          
    }
 
    mover() {

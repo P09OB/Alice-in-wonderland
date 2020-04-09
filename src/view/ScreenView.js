@@ -1,7 +1,6 @@
 class ScreenView {
     constructor(){
 
-      let pIncio, pJuego, pFinal;
       this.pInicio= new Screen1();
       this.pJuego= new Screen2();
       this.pFinal= new Screen3();

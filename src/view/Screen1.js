@@ -22,6 +22,11 @@ class Screen1 {
 
    }
 
+   ganar() {
+
+
+   }
+
   
     
 }

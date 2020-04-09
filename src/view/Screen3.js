@@ -2,7 +2,6 @@ class Screen3 {
 
 constructor(){
     this.controllerMain = new ControllerMain();
-    this.pFinal= loadImage("./imag/pFinal.png"); 
 }
     
     

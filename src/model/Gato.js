@@ -1,8 +1,10 @@
 class Gato extends Elementos {
 
-    gato= loadImage("./imag/gatoBrilla.png"); 
+    gato= loadImage("./imag/gato.png"); 
+    gatoBrilla= loadImage("./imag/gatoBrilla.png"); 
     colaGato= loadImage("./imag/colaGatoBrilla (1).png");
-    llave=loadImage("./imag/llaveBrillo.png");
+   
+
 
     constructor( posX, posY, tam){
         super(posX,posY,tam);
@@ -10,24 +12,30 @@ class Gato extends Elementos {
         this.mostrarL=false;
         this.posXCola=800;
         this.posYCola=-80;
+        this.mostrar2 = false;
+
 
     }
     pintar() {
     //Gato
         if(this.mostrar==true){
-        image(this.gato,this.posX,this.posY,354,562);
+
+            image(this.gatoBrilla,this.posX,this.posY,354,562);
+
 
    }
 
+   if(this.mostrar2 == true ){
+    image(this.gato,this.posX,this.posY,354,562);
+
+
+   }
+
+
     //Cola
-    if(this.mostrar==false){
+    if(this.mostrar==false && this.mostrarL == false){
     image(this.colaGato,this.posXCola,this.posYCola);
     }
-
-    // Llave 
-    if(this.mostrarL==true){
-        image(this.llave,this.posX+70,this.posY-300);
-        }
 
 }
 
@@ -40,9 +48,15 @@ aparecerGato(){
 mostrarLlave(){
     if(this.mostrar==true&&(mouseX > this.posX && mouseX < this.posX+280) && (mouseY> this.posY && mouseY <this.posY+520)) {
         this.mostrarL=true;
+        this.mostrar=false;
+        this.mostrar2 = true;
         
     }
+
+
 }
+
+
 
 
 
