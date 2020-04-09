@@ -14,11 +14,13 @@ class Pastel extends Elementos {
 
         if(this.motrar == true){
             console.log("brillas");
-            image(this.pastel,this.posX,this.posY,0,0);
+            image(this.pastelBrilla,this.posX,this.posY,0,0);
 
         
         }
-        image(this.pastelBrilla,this.posX,this.posY,0,0);
+        if(this.motrar == false){
+            image(this.pastel,this.posX,this.posY,0,0);
+            }
         
         
    }

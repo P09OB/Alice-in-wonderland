@@ -16,7 +16,7 @@ class Personaje extends Elementos {
 
         if (keyCode == RIGHT_ARROW) {
 
-            if(this.posx>0){
+            if(this.posx>=0){
 
             } else {
             this.posX += this.vel; 
@@ -25,7 +25,7 @@ class Personaje extends Elementos {
     
     if (keyCode == LEFT_ARROW) {
 
-        if(this.posx< 1284){
+        if(this.posx<=1284){
 
         } else {
         this.posX -= this.vel; 

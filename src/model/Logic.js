@@ -2,9 +2,15 @@ class Logic {
     constructor() {
         let cuento = [];
         let cuentoSplited = [];
+        let txt = document.getElementById('txt');
+
         this.cuento = loadStrings("./lib/cuento.txt");
         this.otroMundo= loadImage ("./imag/pPuerta.png");
         this.pFinal= loadImage("./imag/pFinal.png"); 
+
+        this.bRestart= loadImage("./imag/bRestart.png"); 
+        this.bSave= loadImage("./imag/bSave.png"); 
+        this.bQuit= loadImage("./imag/bQuit.png"); 
 
 
         
@@ -134,6 +140,17 @@ class Logic {
 
                         case 2:
                                 image(this.pFinal,0,0);
+                                if((mouseX>368 && mouseX<554)&& (mouseY>769 && mouseY<830)){
+                                    image(this.bRestart,368,769);
+                                    
+                                  }
+                                  if((mouseX>609 && mouseX<794)&& (mouseY>769 && mouseY<830)){
+                                    image(this.bSave,609,769);
+                                  }
+                                  if((mouseX>849 && mouseX<1034)&& (mouseY>769 && mouseY<830)){
+                                    image(this.bQuit,849,769);
+                                  }
+
                             
 
                         break;
@@ -216,8 +233,12 @@ class Logic {
 
         case 5: 
         this.pastel.cambiartam();
+        if(this.pastel.cambiartam1 == true){
+
+        
         if((mouseX > this.llave.posX && mouseX < this.llave.posX+315) && (mouseY> this.llave.posY && mouseY <this.llave.posY+411)) {
             this.orden=2;
+        }
      }
 
             break;
@@ -252,6 +273,18 @@ class Logic {
 
 
         case 2:
+
+            if((mouseX>368 && mouseX<554)&& (mouseY>769 && mouseY<830)){
+                this.orden = 0;
+              }
+              if((mouseX>609 && mouseX<794)&& (mouseY>769 && mouseY<830)){
+                saveStrings(this.cuentoSplited, 'nouns.txt');
+              }
+              if((mouseX>849 && mouseX<1034)&& (mouseY>769 && mouseY<830)){
+                this.cambio=0;
+              }
+
+            
 
             
         break;
